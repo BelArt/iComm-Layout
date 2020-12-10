@@ -1,0 +1,138 @@
+.message-field {
+  background: #FFFFFF;
+  border-top: 1px solid #E8E9EB;
+  min-height: 50px;
+  position: relative;
+  padding: 0 5px;
+  @include flex;
+  @include flex-justify(between);
+  @include flex-align-items(end);
+
+  .message-add-file {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    @include flex-shrink(0);
+    .message-add-file-toggler {
+      width: 50px;
+      height: 50px;
+      background: url(../img/add-file-grey.svg) 50% no-repeat;
+      border: none;
+      padding: 0;
+
+      &.active {
+        background-image: url(../img/add-file.svg);
+      }
+    }
+    .message-add-file-list {
+      position: absolute;
+      left: 0;
+      bottom: 50px;
+      z-index: 9;
+      width: 167px;
+      display: none;
+    }
+  }
+
+  .message-send-btn {
+    width: 50px;
+    height: 50px;
+    background: url(../img/send.svg) 50% no-repeat;
+    border: none;
+    padding: 0;
+    @include flex-shrink(0);
+
+    &.active {
+      background-image: url(../img/send-active.svg);
+    }
+  }
+
+  .message-input {
+    width: 100%;
+    padding: 12.5px 5px;
+    max-height: 275px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .mCSB_scrollTools {
+      opacity: 0 !important;
+    }
+  }
+
+  textarea {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    font-size: 15px;
+    line-height: 25px;
+    color: #111111;
+    resize: none;
+    @include placeholder-text(#B9BEC6);
+  }
+}
+
+
+.message-attachments {
+  background: #fff;
+  padding: 15px 60px;
+}
+
+.messages-blocked {
+  border-top: 1px solid #E8E9EB;
+  padding: 0 5px;
+  @include inline-flex;
+  @include flex-align-items(center);
+  height: 50px;
+
+  .icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/block1.svg) 50% no-repeat;
+    margin: 0 5px 0 0;
+  }
+
+  p {
+    font-size: 15px;
+    color: #8F97A3;
+  }
+}
+
+
+.message-add-file-list {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 15px rgba(69, 75, 84, 0.15);
+  @include border-radius(8px);
+  width: 167px;
+  ul {
+    margin: 0;
+    padding: 5px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    li {
+      padding: 10px 0;
+      white-space: nowrap;
+      img {
+        margin: 0 10px 0 0;
+      }
+      a {
+        color: #111111;
+        @include flex;
+        @include flex-align-items(center);
+        &:hover {
+          text-decoration: none;
+        }
+        span {
+          span {
+            font-size: 11px;
+            line-height: 12px;
+            color: #8F97A3;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

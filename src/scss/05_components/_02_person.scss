@@ -1,0 +1,57 @@
+.person-image {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: url(../img/bgi/no_face.png) 50% no-repeat;
+  background-size: cover;
+
+  img {
+    width: 100%;
+    height: 100%;
+    @include border-radius(100%);
+  }
+
+  &__person-online {
+    &:after {
+      content:'';
+      position: absolute;
+      right: 1px;
+      bottom: 1px;
+      width: 13px;
+      height: 13px;
+      background: #13BF69;
+      border: 2px solid #fff;
+      @include border-radius(100%);
+    }
+  }
+}
+
+
+.person-item {
+  @include flex;
+  @include flex-align-items(center);
+  padding: 10px;
+  position: relative;
+  font-size: 13px;
+  line-height: 15px;
+  &:after {
+    content:'';
+    position: absolute;
+    right: 0;
+    left: 50px;
+    bottom: 0;
+    height: 1px;
+    background: #E8E9EB;
+  }
+  p {
+    color: #17191C;
+    font-weight: 600;
+    width: calc(100% - 40px);
+  }
+  .person-image {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+    @include flex-shrink(0);
+  }
+}

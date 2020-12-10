@@ -1,0 +1,72 @@
+.search-wrapper {
+  .search-field {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E8E9EB;
+    height: 50px;
+    position: relative;
+    padding: 15px 50px 14px 45px;
+    button[type=submit] {
+      width: 45px;
+      height: 50px;
+      background: url(../img/bgi/search.svg) 50% no-repeat;
+      border: none;
+      padding: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    button[type=reset] {
+      width: 50px;
+      height: 50px;
+      background: url(../img/bgi/x.svg) 50% no-repeat;
+      border: none;
+      padding: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      &.active {
+        opacity: 1;
+      }
+    }
+    input[type=text] {
+      width: 100%;
+      height: 20px;
+      font-size: 15px;
+      line-height: 20px;
+      background: none;
+      border: none;
+      color: #111111;
+      @include placeholder-text(#B9BEC6);
+
+      &:focus {
+        & + button[type=reset] {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .search-result {
+    background: #fff;
+    h4 {
+      color: #8F97A3;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 0 5px 10px;
+    }
+    .search-result-person {
+      padding: 20px 0;
+      
+    }
+  }
+}
+
+.search-messages {
+  .search-field {
+    button[type=reset] {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.chat-list {
+  .message {
+    padding: 10px;
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    background: $white;
+    @include flex;
+    @include border-radius(8px);
+
+    &__unread {
+      background: #F5F7FA;
+    }
+
+    .person-image {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px 0 0;
+      @include flex-shrink(0);
+    }
+
+    .message-text {
+      max-width: calc(100% - 50px);
+      .message-name {
+        font-weight: 600;
+        color: #111111;
+        margin: 0 0 5px;
+        font-size: 15px;
+        line-height: 20px;
+
+        span {
+          font-size: 13px;
+          font-weight: 400;
+          color: #8F97A3;
+          margin: 0 0 0 10px;
+        }
+      }
+      .message-content {
+        p {
+          font-weight: 400;
+          color: #111111;
+          font-size: 15px;
+          line-height: 25px;
+        }
+        .message-attachments {
+          padding: 15px 0 0;
+        }
+        .attachment-contacts {
+          @include border-radius(5px);
+          background: #EFF7F6;
+          padding: 10px;
+
+          strong {
+            display: block;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #111111;
+          }
+          p {
+            margin: 5px 0 0;
+            color: #111111;
+            font-size: 15px;
+            line-height: 25px;
+            a {
+              color: #046552;
+              font-weight: 500;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

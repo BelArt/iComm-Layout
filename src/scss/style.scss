@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+
+
+
+// -------------------------------------------------- //
+// --------------------- BOOTSTRAP ------------------ //
+// -------------------------------------------------- //
+
+// Bootstrap Core variables and mixins
+@import "02_vendor/bootstrap/functions";
+@import '02_vendor/bootstrap/variables';
+
+//
+// <------ INJECT MY VARIABLES --->
+@import '01_abstracts/_01_variables/_01_variables';
+// <------ END MY VARIABLES --->
+//
+
+// Bootstrap Components
+// Look In Vendor/Bootstrap/_01_bootstrap.scss file to comment or uncomment what you need
+@import '02_vendor/bootstrap/_01_bootstrap.scss';
+
+// -------------------------------------------------- //
+// ------------------- END BOOTSTRAP ---------------- //
+// -------------------------------------------------- //
+
+
+
+
+// -------------------------------------------------- //
+// ------------------- My Config -------------------- //
+// -------------------------------------------------- //
+
+// 1. Configuration and helpers
+
+@import  '01_abstracts/_02_mixins/_01_mixins';
+
+// 2. Vendor
+@import '02_vendor/_jquery.mCustomScrollbar.min.scss';
+
+// 3. Core
+@import  '03_core/_01_scaffolding';
+@import  '03_core/_02_fonts';
+@import  '03_core/_03_typography';
+
+// 4. Layout-related sections
+@import  '04_layout/_01_header';
+@import  '04_layout/_02_footer';
+@import  '04_layout/_03_general';
+
+// 5. Components
+@import  '05_components/_01_message_single';
+@import  '05_components/_02_person';
+@import  '05_components/_03_search';
+@import  '05_components/_04_messages_header';
+@import  '05_components/_05_messages_input';
+@import  '05_components/_06_attachments';
+@import  '05_components/_07_buttons';
+@import  '05_components/_08_chat_list';
+
+// 6. Page-specific styles
+@import  '06_pages/_01_content';

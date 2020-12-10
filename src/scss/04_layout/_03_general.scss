@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #F5F4F2;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  padding: 50px 0 0;
+}
+
+.page-container {
+  background: #fff;
+}
+
+.page-wrapper, .page-container, .column-left, .page-content, .column-center, .column-right {
+  height: 100%;
+
+  .mCSB_container {
+    margin: 0 !important;
+  }
+  .mCSB_scrollTools {
+    opacity: 0 !important;
+  }
+}
+
+@include media(md) {
+  #main {
+    overflow: hidden;
+  }
+}
+
+@include media(xxl) {
+  .page-wrapper {
+    padding: 20px 80px;
+  }
+
+  .page-container {
+    background: #FFFFFF;
+    border: 1px solid #E9EAEC;
+    box-shadow: 0px 10px 30px rgba(61, 66, 77, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}

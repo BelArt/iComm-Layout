@@ -1,0 +1,53 @@
+.date-btn {
+  display: inline-block;
+  background: #fff;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 4px 10px;
+  color: #8F97A3;
+  @include border-radius(13px);
+
+  &:hover {
+    text-decoration: none;
+    color: #8F97A3;
+    box-shadow: 0px 2px 5px rgba(69, 75, 84, 0.1);
+  }
+}
+
+.end-list-btn {
+  display: inline-block;
+  background: #fff;
+  font-size: 15px;
+  line-height: 17px;
+  padding: 8px 15px 8px 40px;
+  color: #8F97A3;
+  font-weight: 500;
+  @include border-radius(18px);
+  border: 1px solid #E9EAEC;
+  position: relative;
+
+  &:before {
+    content:'';
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    background: url(../img/bgi/arrow-down.svg) 50% -10px no-repeat;
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 10px rgba(69, 75, 84, 0.15);
+    color: #046552;
+    text-decoration: none;
+    &:before {
+      background-position: 50% -51px;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0px 5px 10px rgba(69, 75, 84, 0.15);
+    color: #046552;
+  }
+}
