@@ -19,8 +19,8 @@ var mapURL          = './';
 //-------------------------------------                                  
 // Styles for Development
 //
-gulp.task( 'styles-dev', function() {
-    gulp.src([ styleSRC ])
+gulp.task( 'styles-dev', function(done) {
+  return gulp.src([ styleSRC ])
     .pipe( sourcemaps.init() )
     .pipe( sass({
         errLogToConsole: true,
@@ -33,7 +33,7 @@ gulp.task( 'styles-dev', function() {
     .pipe(notify({
         message: 'SCSS COMPILED',
         onLast: true
-    }))
+    }));
 });
 
 
@@ -41,7 +41,7 @@ gulp.task( 'styles-dev', function() {
 // Styles for Production          
 //
 gulp.task( 'styles-prod', function() {
-    gulp.src([ styleSRC ])
+  return gulp.src([ styleSRC ])
     .pipe( sass({
         errLogToConsole: true,
         outputStyle: 'compressed'
@@ -79,8 +79,8 @@ gulp.task('scripts-prod', function() {
 });
 
 gulp.task('fonts', function() {
-	return src('../src/fonts/*')
-		.pipe(dest('../dist/fonts/'))
+	return gulp.src('../src/fonts/*')
+		.pipe(gulp.dest('../dist/fonts/'))
 });
 
 
@@ -97,10 +97,5 @@ gulp.task('watch', function() {
 
 });
 
-
-
-gulp.task('build', ['watch', 'styles-prod', 'scripts-prod', 'fonts']);
-
-
-
+gulp.task('build', gulp.series('styles-prod', 'scripts-prod', 'fonts'));
 
