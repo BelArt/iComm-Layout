@@ -1935,9 +1935,7 @@ mark,
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-border-radius: 0.25rem;
      -moz-border-radius: 0.25rem;
@@ -1970,7 +1968,17 @@ mark,
   opacity: 1;
 }
 
+.form-control:-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -2610,9 +2618,7 @@ tbody.collapse.show {
   width: 100%;
   pointer-events: auto;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0.3rem;
      -moz-border-radius: 0.3rem;
@@ -2878,9 +2884,7 @@ tbody.collapse.show {
   font-size: 0.875rem;
   word-wrap: break-word;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding-box;
-          background-clip: padding-box;
+  background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 0.3rem;
      -moz-border-radius: 0.3rem;
@@ -7223,21 +7227,21 @@ a.text-dark:hover, a.text-dark:focus {
 
 .mCS-3d-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-repeat: repeat-y;
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
-  background-image: -moz- oldlinear-gradient(left, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
 }
 
 .mCS-3d-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick-dark.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-3d-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar, .mCS-3d.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
   background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
-  background-image: -moz- oldlinear-gradient(top, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0) 100%);
 }
 
