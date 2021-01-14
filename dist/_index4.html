@@ -34,7 +34,7 @@
     </header>
     <section id="main">
       <div class="page-wrapper">
-        <div class="page-container">
+        <div class="page-container chat-active">
           <div class="column-left">
             <div class="search-wrapper">
               <form action="#">
@@ -242,9 +242,196 @@
           </div>
           <div class="page-content">
             <div class="column-center">
-              <div class="chat-empty">
-                <figure><img src="img/empty.png" alt=""></figure>
-                <p>Выберите, кому хотели бы написать</p>
+              <div class="chat-current">
+                <div class="messages-header">
+                  <div class="person-item">
+                    <figure class="person-image"><img src="img/person.png" alt=""></figure>
+                    <p>Ибрагим Салаваров</p>
+                  </div>
+                  <div class="person-options">
+                    <button class="person-options-toggler"></button>
+                    <div class="person-options-list">
+                      <div class="person-options-box">
+                        <ul>
+                          <li><a href="#"><img src="img/info.svg" alt="">Информация</a></li>
+                          <li><a href="#"><img src="img/add-file.svg" alt="">Прикреплённые файлы</a></li>
+                          <li><a href="#"><img src="img/search-green.svg" alt="">Поиск по сообщениям</a></li>
+                        </ul>
+                      </div>
+                      <div class="person-options-box">
+                        <ul>
+                          <li><a href="#"><img src="img/block.svg" alt="">Заблокировать пользователя</a></li>
+                          <li><a href="#"><img src="img/trash.svg" alt="">Удалить чат</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-current-scroller">
+                  <div class="chat-list">
+                    <div class="message">
+                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
+                      <div class="message-text">
+                        <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
+                        <div class="message-content">
+                          <p>Он ушёл рано утром на работу, а мы с мамой были дома – мама по причине отпуска, а я – по причине каникул. Я как раз окончил третий курс физического факультета Ростовского госуниверситета и страдал «кризисом третьего курса». Первая, в смысле – четвёртая – часть «Звёздных Войн», мягко говоря, перевернула мне мировоззрение, а побочным эффектом этого переворота стал возврат интереса к физике вообще и к высокотемпературной сверхпроводимости в частности. Что ни говори, а правильно сделанная фантастика бывает очень полезной.</p>
+                          <div class="message-attachments">
+                            <div class="attachemnts-images">
+                              <div class="attachemnts-images-item">
+                                <figure>
+                                  <a href="img/image-lg.png" data-fancybox="images"><img src="img/attachment.png" alt=""></a>
+                                  <a href="#" class="item-delete"></a>
+                                  <a href="#" class="item-loading"></a>
+                                </figure>
+                              </div>
+                              <div class="attachemnts-images-item">
+                                <figure>
+                                  <a href="img/image-lg.png" data-fancybox="images"><img src="img/attachment.png" alt=""></a>
+                                  <a href="#" class="item-delete"></a>
+                                  <a href="#" class="item-loading"></a>
+                                </figure>
+                              </div>
+                              <div class="attachemnts-images-item attachemnts-images-item__loading">
+                                <figure>
+                                  <a href="img/image-lg.png" data-fancybox="images"><img src="img/attachment.png" alt=""></a>
+                                  <a href="#" class="item-delete"></a>
+                                  <a href="#" class="item-loading"></a>
+                                </figure>
+                              </div>
+                            </div>
+                            <div class="attachments-files">
+                              <div class="attachments-incoming-item">
+                                <span class="icon"><img src="img/file1.svg" alt=""></span>
+                                <div class="attachments-incoming-item-text">
+                                  <p>Adobe_Zii_2019_4.1.1_macdownload.org.zip</p>
+                                  <span>948 KB - <a href="#" class="item-download">Скачать</a></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="message">
+                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
+                      <div class="message-text">
+                        <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
+                        <div class="message-content">
+                          <p>Он ушёл рано утром на работу, а мы с мамой были дома – мама по причине отпуска, а я – по причине каникул. Я как раз окончил третий курс физического факультета Ростовского госуниверситета и страдал «кризисом третьего курса». Первая, в смысле – четвёртая – часть «Звёздных Войн», мягко говоря, перевернула мне мировоззрение, а побочным эффектом этого переворота стал возврат интереса к физике вообще и к высокотемпературной сверхпроводимости в частности. Что ни говори, а правильно сделанная фантастика бывает очень полезной.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-date">
+                      <a href="#" class="date-btn">Вчера</a>
+                    </div>
+                    <div class="message">
+                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
+                      <div class="message-text">
+                        <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
+                        <div class="message-content">
+                          <p>В итоге – восстание в далёкой-далёкой давным-давно и августовские события 1991-го года в России надолго стали для меня чем-то общим. И тогда, и сейчас я был и остаюсь на стороне повстанцев, конечно, хотя иногда… Впрочем, это не важно.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-date">
+                      <a href="#" class="date-btn">Сегодня</a>
+                    </div>
+                    <div class="message message__unread">
+                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
+                      <div class="message-text">
+                        <p class="message-name">Виктор Самойлов <span>11:47</span></p>
+                        <div class="message-content">
+                          <p>Здравствуйте, у меня есть предложение сотрудничества. Готовы обсудить?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="end-list-btn">Перейти в конец</a>
+              </div>
+              <div class="message-field-wrapper">
+                <div class="message-field">
+                  <div class="message-add-file">
+                    <button class="message-add-file-toggler"></button>
+                    <div class="message-add-file-list">
+                      <ul>
+                        <li><a href="#"><img src="img/photo.svg" alt=""><span>Фото</span></a></li>
+                        <li><a href="#"><img src="img/file.svg" alt=""><span>Файлы <span>не более 5 МБ</span></span></a></li>
+                        <li><a href="#"><img src="img/info.svg" alt=""><span>Мои контакты <span>телефон и почта</span></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="message-input">
+                    <textarea placeholder="Напишите сообщение...">Не смотри на меня, дружище. Я просто сказал, что ты хороший пилот. Я не знал, что они ищут кого-нибудь, чтобы повести эту безумную атаку.</textarea>
+                  </div>
+                  <button class="message-send-btn"></button>
+                </div>
+                <div class="message-attachments">
+                  <div class="attachemnts-images">
+                    <div class="attachemnts-images-item">
+                      <figure>
+                        <img src="img/attachment.png" alt="">
+                        <a href="#" class="item-delete"></a>
+                        <a href="#" class="item-loading"></a>
+                      </figure>
+                    </div>
+                    <div class="attachemnts-images-item">
+                      <figure>
+                        <img src="img/attachment.png" alt="">
+                        <a href="#" class="item-delete"></a>
+                        <a href="#" class="item-loading"></a>
+                      </figure>
+                    </div>
+                    <div class="attachemnts-images-item attachemnts-images-item__loading">
+                      <figure>
+                        <img src="img/attachment.png" alt="">
+                        <a href="#" class="item-delete"></a>
+                        <a href="#" class="item-loading"></a>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="attachments-files">
+                    <div class="attachments-files-item">
+                      <span class="icon"><img src="img/file1.svg" alt=""></span>
+                      <div class="attachments-files-item-text">
+                        <a href="#" class="item-delete"></a>
+                        <p>CV_Han_Solo.pdf</p>
+                        <span>948 KB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="attachments-files">
+                    <div class="attachments-files-item">
+                      <span class="icon"><img src="img/file1.svg" alt=""></span>
+                      <div class="attachments-files-item-text">
+                        <a href="#" class="item-delete"></a>
+                        <p>Documentation-DarkStar.doc</p>
+                        <span>2,3 MB</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="attachments-files">
+                    <div class="attachments-files-item">
+                      <span class="icon"><img src="img/file1.svg" alt=""></span>
+                      <div class="attachments-files-item-text">
+                        <a href="#" class="item-delete"></a>
+                        <p>Portolio_Han_Solo.pdf</p>
+                        <div class="loading-bar"><span style="width: 25%;"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-right">
+              <div class="chat-current-person">
+                <div class="chat-current-person-scroller">
+                  <figure><img src="img/current.png" alt=""></figure>
+                  <h3>Салаваров Ибрагим Валерьевич</h3>
+                  <p>Кандидат педагогических наук</p>
+                  <p>Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации «Российское общество...</p>
+                </div>
+                <a href="#" class="block-person">Заблокировать пользователя</a>
               </div>
             </div>
           </div>

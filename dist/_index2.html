@@ -34,7 +34,7 @@
     </header>
     <section id="main">
       <div class="page-wrapper">
-        <div class="page-container">
+        <div class="page-container chat-active">
           <div class="column-left">
             <div class="search-wrapper">
               <form action="#">
@@ -242,9 +242,36 @@
           </div>
           <div class="page-content">
             <div class="column-center">
-              <div class="chat-empty">
-                <figure><img src="img/empty.png" alt=""></figure>
-                <p>Выберите, кому хотели бы написать</p>
+              <div class="upload-wrapper">
+                <div class="upload-box">
+                  <input type="file">
+                  <div class="upload-type1">
+                    <p>Перетащите сюда файлы для отправки</p>
+                    <p><strong>без сжатия</strong></p>
+                  </div>
+                </div>
+                <div class="upload-box">
+                  <input type="file">
+                  <div class="upload-type2">
+                    <p>Перетащите сюда файлы для отправки</p>
+                    <p><strong>быстрым способом</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column-right">
+              <div class="chat-current-person-over active">
+                <p class="d-none d-sm-block">Закрыть</p>
+                <p class="d-sm-none">В чат</p>
+              </div>
+              <div class="chat-current-person active">
+                <div class="chat-current-person-scroller">
+                  <figure><img src="img/current.png" alt=""></figure>
+                  <h3>Салаваров Ибрагим Валерьевич</h3>
+                  <p>Кандидат педагогических наук</p>
+                  <p>Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации «Российское общество...</p>
+                </div>
+                <a href="#" class="block-person">Заблокировать пользователя</a>
               </div>
             </div>
           </div>
