@@ -1,387 +1,407 @@
 <!DOCTYPE html>
-<html lang="de"> 
-  <head> 
-    <meta charset="utf-8">
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
     <title>Title</title>
-    <meta name="description" content="description">
-    <meta name="keywords" content="keywords">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </head>
   <body>
     <div>
-    <header class="page-header">
-      <div class="wrapper">
-        <a href="#" class="back-link">
-          <span class="d-none d-md-inline">Вернуться на платформу</span>
-          <span class="d-md-none">На платформу</span>
-        </a>
-        <div class="account">
-          <div class="account-desktop d-none d-md-flex">
-            <p>Виктор Самойлов</p>
-            <figure><img src="img/person.png" alt=""></figure>
-          </div>
-          <div class="account-mobile d-flex d-md-none">
-            <p>Мой кабинет</p>
-            <figure><img src="img/person.png" alt=""></figure>
+      <header class="page-header">
+        <div class="wrapper">
+          <a href="#" class="back-link">
+            <span class="d-none d-md-inline">Вернуться на платформу</span>
+            <span class="d-md-none">На платформу</span>
+          </a>
+          <div class="account">
+            <div class="account-desktop d-none d-md-flex">
+              <p>Виктор Самойлов</p>
+              <figure><img src="img/person.png" alt="" /></figure>
+            </div>
+            <div class="account-mobile d-flex d-md-none">
+              <p>Мой кабинет</p>
+              <figure><img src="img/person.png" alt="" /></figure>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <section id="main">
-      <div class="page-wrapper">
-        <div class="page-container chat-active">
-          <div class="column-left">
-            <div class="search-wrapper">
-              <form action="#">
-                <div class="search-field">
-                  <button type="submit"></button>
-                  <input type="text" placeholder="Поиск">
-                  <button type="reset"></button>
+      </header>
+      <section id="main">
+        <div class="page-wrapper">
+          <div class="page-container chat-active">
+            <div class="column-left">
+              <div class="search-wrapper">
+                <form action="#">
+                  <div class="search-field">
+                    <button type="submit"></button>
+                    <input type="text" placeholder="Поиск" />
+                    <button type="reset"></button>
+                  </div>
+                </form>
+              </div>
+              <div class="message-list-scroller">
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Исмаил Урунгаев</p>
+                    <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
+                  </div>
                 </div>
-              </form>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Харисон Форд</p>
+                    <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
+                    <span class="msg-count">2</span>
+                  </div>
+                </div>
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Владлена Никифорова</p>
+                    <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Елена Владимирова</p>
+                    <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
+                    <span class="msg-count">1</span>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Борис Фролов</p>
+                    <p class="msg-item-content">Очень понравилось :))</p>
+                    <span class="msg-count">3</span>
+                  </div>
+                </div>
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Исмаил Урунгаев</p>
+                    <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Харисон Форд</p>
+                    <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
+                    <span class="msg-count">2</span>
+                  </div>
+                </div>
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Владлена Никифорова</p>
+                    <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Елена Владимирова</p>
+                    <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
+                    <span class="msg-count">1</span>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Борис Фролов</p>
+                    <p class="msg-item-content">Очень понравилось :))</p>
+                    <span class="msg-count">3</span>
+                  </div>
+                </div>
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Исмаил Урунгаев</p>
+                    <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Харисон Форд</p>
+                    <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
+                    <span class="msg-count">2</span>
+                  </div>
+                </div>
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Владлена Никифорова</p>
+                    <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Елена Владимирова</p>
+                    <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
+                    <span class="msg-count">1</span>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Борис Фролов</p>
+                    <p class="msg-item-content">Очень понравилось :))</p>
+                    <span class="msg-count">3</span>
+                  </div>
+                </div>
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Исмаил Урунгаев</p>
+                    <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Харисон Форд</p>
+                    <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
+                    <span class="msg-count">2</span>
+                  </div>
+                </div>
+                <div class="msg-item">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Владлена Никифорова</p>
+                    <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Елена Владимирова</p>
+                    <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
+                    <span class="msg-count">1</span>
+                  </div>
+                </div>
+                <div class="msg-item msg-item__msg-new">
+                  <span class="msg-item-time">12:47</span>
+                  <button class="msg-item-delete"></button>
+                  <figure class="person-image person-image__person-online"><img src="img/person.png" alt="" /></figure>
+                  <div class="msg-item-text">
+                    <p class="msg-item-name">Борис Фролов</p>
+                    <p class="msg-item-content">Очень понравилось :))</p>
+                    <span class="msg-count">3</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="message-list-scroller">
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Исмаил Урунгаев</p>
-                  <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Харисон Форд</p>
-                  <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
-                  <span class="msg-count">2</span>
-                </div>
-              </div>
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Владлена Никифорова</p>
-                  <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Елена Владимирова</p>
-                  <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
-                  <span class="msg-count">1</span>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Борис Фролов</p>
-                  <p class="msg-item-content">Очень понравилось :))</p>
-                  <span class="msg-count">3</span>
-                </div>
-              </div>
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Исмаил Урунгаев</p>
-                  <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Харисон Форд</p>
-                  <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
-                  <span class="msg-count">2</span>
-                </div>
-              </div>
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Владлена Никифорова</p>
-                  <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Елена Владимирова</p>
-                  <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
-                  <span class="msg-count">1</span>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Борис Фролов</p>
-                  <p class="msg-item-content">Очень понравилось :))</p>
-                  <span class="msg-count">3</span>
-                </div>
-              </div>
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Исмаил Урунгаев</p>
-                  <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Харисон Форд</p>
-                  <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
-                  <span class="msg-count">2</span>
-                </div>
-              </div>
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Владлена Никифорова</p>
-                  <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Елена Владимирова</p>
-                  <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
-                  <span class="msg-count">1</span>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Борис Фролов</p>
-                  <p class="msg-item-content">Очень понравилось :))</p>
-                  <span class="msg-count">3</span>
-                </div>
-              </div>
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Исмаил Урунгаев</p>
-                  <p class="msg-item-content"><span>Вы:</span>Здравствуйте, у меня есть преу меня есть</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Харисон Форд</p>
-                  <p class="msg-item-content">Люк, я знаю, кто твой отец! Этo кто твой отец</p>
-                  <span class="msg-count">2</span>
-                </div>
-              </div>
-              <div class="msg-item">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Владлена Никифорова</p>
-                  <p class="msg-item-content"><span>Вы:</span>Привет!) Не хочешь познакомиться?</p>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Елена Владимирова</p>
-                  <p class="msg-item-content">Хай! 👋 Давай знакомиться?</p>
-                  <span class="msg-count">1</span>
-                </div>
-              </div>
-              <div class="msg-item msg-item__msg-new">
-                <span class="msg-item-time">12:47</span>
-                <button class="msg-item-delete"></button>
-                <figure class="person-image person-image__person-online"><img src="img/person.png" alt=""></figure>
-                <div class="msg-item-text">
-                  <p class="msg-item-name">Борис Фролов</p>
-                  <p class="msg-item-content">Очень понравилось :))</p>
-                  <span class="msg-count">3</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="column-center">
-              <div class="chat-current">
+            <div class="page-content">
+              <div class="column-center">
                 <div class="messages-header">
                   <div class="person-item">
-                    <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                    <p>Ибрагим Салаваров</p>
+                    <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                    <p>Николай Христолюбов</p>
                   </div>
                   <div class="person-options">
                     <button class="person-options-toggler"></button>
                     <div class="person-options-list">
                       <div class="person-options-box">
                         <ul>
-                          <li><a href="#"><img src="img/info.svg" alt="">Информация</a></li>
-                          <li><a href="#"><img src="img/add-file.svg" alt="">Прикреплённые файлы</a></li>
-                          <li><a href="#"><img src="img/search-green.svg" alt="">Поиск по сообщениям</a></li>
+                          <li>
+                            <a href="#"><img src="img/info.svg" alt="" />Информация</a>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/add-file.svg" alt="" />Прикреплённые файлы</a>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/search-green.svg" alt="" />Поиск по сообщениям</a>
+                          </li>
                         </ul>
                       </div>
                       <div class="person-options-box">
                         <ul>
-                          <li><a href="#"><img src="img/block.svg" alt="">Заблокировать пользователя</a></li>
-                          <li><a href="#"><img src="img/trash.svg" alt="">Удалить чат</a></li>
+                          <li>
+                            <a href="#"><img src="img/block.svg" alt="" />Заблокировать пользователя</a>
+                          </li>
+                          <li>
+                            <a href="#"><img src="img/trash.svg" alt="" />Удалить чат</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="chat-current-scroller">
-                  <div class="chat-list">
-                    <div class="message">
-                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                      <div class="message-text">
-                        <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
-                        <div class="message-content">
-                          <p>Он ушёл рано утром на работу, а мы с мамой были дома – мама по причине отпуска, а я – по причине каникул. Я как раз окончил третий курс физического факультета Ростовского госуниверситета и страдал «кризисом третьего курса». Первая, в смысле – четвёртая – часть «Звёздных Войн», мягко говоря, перевернула мне мировоззрение, а побочным эффектом этого переворота стал возврат интереса к физике вообще и к высокотемпературной сверхпроводимости в частности. Что ни говори, а правильно сделанная фантастика бывает очень полезной.</p>
-                          <div class="message-attachments">
-                            <div class="attachemnts-images">
-                              <div class="attachemnts-images-item">
-                                <figure>
-                                  <a href="img/image-lg.png" data-fancybox="images"><img src="img/attachment.png" alt=""></a>
-                                  <a href="#" class="item-delete"></a>
-                                  <a href="#" class="item-loading"></a>
-                                </figure>
+                <div class="chat-current">
+                  <div class="chat-current-scroller">
+                    <div class="chat-list">
+                      <div class="message">
+                        <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                        <div class="message-text">
+                          <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
+                          <div class="message-content">
+                            <p>Он ушёл рано утром на работу, а мы с мамой были дома – мама по причине отпуска, а я – по причине каникул. Я как раз окончил третий курс физического факультета Ростовского госуниверситета и страдал «кризисом третьего курса». Первая, в смысле – четвёртая – часть «Звёздных Войн», мягко говоря, перевернула мне мировоззрение, а побочным эффектом этого переворота стал возврат интереса к физике вообще и к высокотемпературной сверхпроводимости в частности. Что ни говори, а правильно сделанная фантастика бывает очень полезной.</p>
+                            <div class="message-attachments">
+                              <div class="attachemnts-images">
+                                <div class="attachemnts-images-item">
+                                  <figure>
+                                    <a href="img/image-lg.png" data-fancybox="images"><img src="img/attachment.png" alt="" /></a>
+                                    <a href="#" class="item-delete"></a>
+                                    <a href="#" class="item-loading"></a>
+                                  </figure>
+                                </div>
+                                <div class="attachemnts-images-item">
+                                  <figure>
+                                    <a href="img/image-lg-2.png" data-fancybox="images"><img src="img/attachment.png" alt="" /></a>
+                                    <a href="#" class="item-delete"></a>
+                                    <a href="#" class="item-loading"></a>
+                                  </figure>
+                                </div>
+                                <div class="attachemnts-images-item attachemnts-images-item__loading">
+                                  <figure>
+                                    <a href="img/image-lg-1.png" data-fancybox="images"><img src="img/attachment.png" alt="" /></a>
+                                    <a href="#" class="item-delete"></a>
+                                    <a href="#" class="item-loading"></a>
+                                  </figure>
+                                </div>
                               </div>
-                              <div class="attachemnts-images-item">
-                                <figure>
-                                  <a href="img/image-lg-2.png" data-fancybox="images"><img src="img/attachment.png" alt=""></a>
-                                  <a href="#" class="item-delete"></a>
-                                  <a href="#" class="item-loading"></a>
-                                </figure>
-                              </div>
-                              <div class="attachemnts-images-item attachemnts-images-item__loading">
-                                <figure>
-                                  <a href="img/image-lg-1.png" data-fancybox="images"><img src="img/attachment.png" alt=""></a>
-                                  <a href="#" class="item-delete"></a>
-                                  <a href="#" class="item-loading"></a>
-                                </figure>
-                              </div>
-                            </div>
-                            <div class="attachments-files">
-                              <div class="attachments-incoming-item">
-                                <span class="icon"><img src="img/file1.svg" alt=""></span>
-                                <div class="attachments-incoming-item-text">
-                                  <p>Adobe_Zii_2019_4.1.1_macdownload.org.zip</p>
-                                  <span>948 KB - <a href="#" class="item-download">Скачать</a></span>
+                              <div class="attachments-files">
+                                <div class="attachments-incoming-item">
+                                  <span class="icon"><img src="img/file1.svg" alt="" /></span>
+                                  <div class="attachments-incoming-item-text">
+                                    <p>Adobe_Zii_2019_4.1.1_macdownload.org.zip</p>
+                                    <span>948 KB - <a href="#" class="item-download">Скачать</a></span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="message">
-                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                      <div class="message-text">
-                        <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
-                        <div class="message-content">
-                          <p>Он ушёл рано утром на работу, а мы с мамой были дома – мама по причине отпуска, а я – по причине каникул. Я как раз окончил третий курс физического факультета Ростовского госуниверситета и страдал «кризисом третьего курса». Первая, в смысле – четвёртая – часть «Звёздных Войн», мягко говоря, перевернула мне мировоззрение, а побочным эффектом этого переворота стал возврат интереса к физике вообще и к высокотемпературной сверхпроводимости в частности. Что ни говори, а правильно сделанная фантастика бывает очень полезной.</p>
+                      <div class="message">
+                        <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                        <div class="message-text">
+                          <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
+                          <div class="message-content">
+                            <p>Он ушёл рано утром на работу, а мы с мамой были дома – мама по причине отпуска, а я – по причине каникул. Я как раз окончил третий курс физического факультета Ростовского госуниверситета и страдал «кризисом третьего курса». Первая, в смысле – четвёртая – часть «Звёздных Войн», мягко говоря, перевернула мне мировоззрение, а побочным эффектом этого переворота стал возврат интереса к физике вообще и к высокотемпературной сверхпроводимости в частности. Что ни говори, а правильно сделанная фантастика бывает очень полезной.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-date">
+                        <a href="#" class="date-btn">Вчера</a>
+                      </div>
+                      <div class="message">
+                        <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                        <div class="message-text">
+                          <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
+                          <div class="message-content">
+                            <p>В итоге – восстание в далёкой-далёкой давным-давно и августовские события 1991-го года в России надолго стали для меня чем-то общим. И тогда, и сейчас я был и остаюсь на стороне повстанцев, конечно, хотя иногда… Впрочем, это не важно.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-date">
+                        <a href="#" class="date-btn">Сегодня</a>
+                      </div>
+                      <div class="message message__unread">
+                        <figure class="person-image"><img src="img/person.png" alt="" /></figure>
+                        <div class="message-text">
+                          <p class="message-name">Виктор Самойлов <span>11:47</span></p>
+                          <div class="message-content">
+                            <p>Здравствуйте, у меня есть предложение сотрудничества. Готовы обсудить?</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="chat-date">
-                      <a href="#" class="date-btn">Вчера</a>
-                    </div>
-                    <div class="message">
-                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                      <div class="message-text">
-                        <p class="message-name">Ибрагим Салаваров <span>11:47</span></p>
-                        <div class="message-content">
-                          <p>В итоге – восстание в далёкой-далёкой давным-давно и августовские события 1991-го года в России надолго стали для меня чем-то общим. И тогда, и сейчас я был и остаюсь на стороне повстанцев, конечно, хотя иногда… Впрочем, это не важно.</p>
-                        </div>
+                  </div>
+                </div>
+                <div class="message-field-wrapper">
+                  <div class="message-field">
+                    <div class="message-add-file">
+                      <button class="message-add-file-toggler"></button>
+                      <div class="message-add-file-list">
+                        <ul>
+                          <li>
+                            <a href="#"><img src="img/photo.svg" alt="" /><span>Фото</span></a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><img src="img/file.svg" alt="" /><span>Файлы <span>не более 5 МБ</span></span></a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><img src="img/info.svg" alt="" /><span>Мои контакты <span>телефон и почта</span></span></a
+                            >
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="chat-date">
-                      <a href="#" class="date-btn">Сегодня</a>
+                    <div class="message-input">
+                      <textarea placeholder="Напишите сообщение..."></textarea>
                     </div>
-                    <div class="message message__unread">
-                      <figure class="person-image"><img src="img/person.png" alt=""></figure>
-                      <div class="message-text">
-                        <p class="message-name">Виктор Самойлов <span>11:47</span></p>
-                        <div class="message-content">
-                          <p>Здравствуйте, у меня есть предложение сотрудничества. Готовы обсудить?</p>
-                        </div>
-                      </div>
-                    </div>
+                    <button class="message-send-btn"></button>
                   </div>
                 </div>
               </div>
-              <div class="message-field-wrapper">
-                <div class="message-field">
-                  <div class="message-add-file">
-                    <button class="message-add-file-toggler"></button>
-                    <div class="message-add-file-list">
-                      <ul>
-                        <li><a href="#"><img src="img/photo.svg" alt=""><span>Фото</span></a></li>
-                        <li><a href="#"><img src="img/file.svg" alt=""><span>Файлы <span>не более 5 МБ</span></span></a></li>
-                        <li><a href="#"><img src="img/info.svg" alt=""><span>Мои контакты <span>телефон и почта</span></span></a></li>
-                      </ul>
-                    </div>
+              <div class="column-right">
+                <div class="chat-current-person">
+                  <div class="chat-current-person-scroller">
+                    <figure><img src="img/current.png" alt="" /></figure>
+                    <h3>Салаваров Ибрагим Валерьевич</h3>
+                    <p>Кандидат педагогических наук</p>
+                    <p>Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации «Российское общество...</p>
                   </div>
-                  <div class="message-input">
-                    <textarea placeholder="Напишите сообщение..."></textarea>
-                  </div>
-                  <button class="message-send-btn"></button>
+                  <a href="#" class="block-person">Заблокировать пользователя</a>
                 </div>
-              </div>
-            </div>
-            <div class="column-right">
-              <div class="chat-current-person">
-                <div class="chat-current-person-scroller">
-                  <figure><img src="img/current.png" alt=""></figure>
-                  <h3>Салаваров Ибрагим Валерьевич</h3>
-                  <p>Кандидат педагогических наук</p>
-                  <p>Директор Института непрерывного образования, директор ФИЛИАЛА Общероссийской общественно-государственной просветительской организации «Российское общество...</p>
-                </div>
-                <a href="#" class="block-person">Заблокировать пользователя</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   </body>
 </html>

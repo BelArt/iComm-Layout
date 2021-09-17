@@ -61,6 +61,7 @@ return t.apply(e,arguments)}}function a(){this.onload=null,e(t).addClass(d[2]),r
       });
     });
 
+    // textarea resize on input function
     var textarea = document.querySelectorAll('.message-input textarea');
     textarea.forEach(function(el) {
       var textWrapper = el.parentNode;
