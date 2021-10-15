@@ -6,7 +6,7 @@
   height: 50px;
   z-index: 9;
   background: #fff;
-  border-bottom: 1px solid #E8E9EB;
+  border-bottom: 1px solid $border;
 
   .wrapper {
     @include flex;
@@ -19,11 +19,11 @@
     font-size: 14px;
     line-height: 20px;
     padding: 0 0 0 30px;
-    color: #8F97A3;
+    color: $text;
     font-weight: 500;
     position: relative;
     &:before {
-      content:'';
+      content: "";
       position: absolute;
       left: 0px;
       width: 20px;
@@ -37,8 +37,8 @@
   .account-mobile {
     @include flex-align-items(center);
     p {
-      color: #17191C;
-      font-weight: 600;
+      color: $textDark;
+      font-weight: 500;
       font-size: 14px;
       line-height: 20px;
     }
@@ -59,8 +59,8 @@
     padding: 0 30px 0 0;
     position: relative;
     p {
-      color: #17191C;
-      font-weight: 600;
+      color: $textDark;
+      font-weight: 500;
       font-size: 14px;
       line-height: 20px;
     }
@@ -75,7 +75,7 @@
       }
     }
     &:after {
-      content:'';
+      content: "";
       position: absolute;
       right: 0px;
       width: 20px;
@@ -87,7 +87,7 @@
   }
 }
 
-@media (min-width:1400px) {
+@media (min-width: 1400px) {
   .page-header {
     box-shadow: 0px 10px 30px rgba(61, 66, 77, 0.05);
 

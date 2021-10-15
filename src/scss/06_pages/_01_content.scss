@@ -1,5 +1,3 @@
-
-
 .page-wrapper {
   .page-container {
     @include flex;
@@ -8,6 +6,7 @@
       @include flex-shrink(0);
       @include flex-grow(0);
       width: 100%;
+      position: relative;
     }
     .page-content {
       @include flex;
@@ -26,7 +25,7 @@
     .page-container {
       .column-left {
         width: 315px;
-        border-right: 1px solid #E8E9EB;
+        border-right: 1px solid #e8e9eb;
         @include flex-shrink(0);
         @include flex-grow(0);
       }
@@ -36,6 +35,7 @@
         width: 100%;
         .column-center {
           width: 100%;
+          min-width: 0;
           .chat-empty {
             @include flex;
             @include flex-column;
@@ -44,9 +44,9 @@
             height: 100%;
 
             p {
-              color: #8F97A3;
-              font-size: 15px;
-              line-height: 25px;
+              color: $text;
+              font-size: 16px;
+              line-height: 24px;
               margin: 25px 0 0;
             }
           }
@@ -64,29 +64,29 @@
 }
 
 .page-container.chat-active {
-  .column-left, .column-right {
+  .column-left,
+  .column-right {
     width: 0;
     overflow: hidden;
   }
 
   .chat-current {
     position: relative;
-    padding: 50px 5px 60px;
+    padding: 0 5px 15px;
     height: 100%;
     overflow: hidden;
+    .end-list-btn {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
     .messages-header {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
-    }
-    .message-field {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #fff;
-      z-index: 9;
     }
     .chat-current-scroller {
       height: 100%;
@@ -98,6 +98,131 @@
     }
   }
 
+  .chat-current-person-over {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    padding: 0 10px;
+    background: #fff;
+    border-bottom: 1px solid #e8e9eb;
+    @include flex;
+    @include flex-column;
+    @include flex-justify(center);
+    display: none;
+    z-index: 98;
+    cursor: pointer;
+
+    &.active {
+      display: flex;
+    }
+
+    p {
+      color: $text;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      position: relative;
+      padding: 0 0 0 30px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        background: url(../img/bgi/arrow-down.svg) 50% -10px no-repeat;
+        transform: translateY(-50%) rotate(90deg);
+      }
+    }
+  }
+
+  .chat-current-person {
+    height: calc(100% - 50px);
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    padding: 30px 30px 80px;
+    width: 100%;
+    background: #fff;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .chat-current-person-scroller {
+      height: 100%;
+      overflow: hidden;
+    }
+    figure {
+      margin: 0 0 20px;
+      img {
+        border-radius: 5px;
+      }
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      color: $textDark;
+      margin: 0 0 10px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text;
+      margin: 0 0 10px;
+    }
+    .block-person {
+      position: absolute;
+      left: 27px;
+      right: 27px;
+      bottom: 20px;
+      z-index: 9;
+      background: url(../img/block1.svg) 15px 50% no-repeat;
+      padding: 10px 10px 10px 42px;
+      color: #6e6d7a;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @include media(sm) {
+    .chat-current-person-over {
+      top: 50px;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 0 315px 0 0;
+      height: auto;
+      @include flex-align-items(center);
+
+      p {
+        color: #fff;
+        padding: 0 0 0 35px;
+
+        &:before {
+          width: 30px;
+          height: 30px;
+          background: url(../img/bgi/close.svg) 50% no-repeat;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    .chat-current-person {
+      width: 315px;
+    }
+  }
+
   @include media(md) {
     .column-left {
       width: 315px;
@@ -106,57 +231,26 @@
       max-width: calc(100% - 315px);
     }
     .chat-current {
-      padding: 65px 15px;
+      padding: 0 15px 15px;
     }
   }
 
-  @include media(xxl) {
+  @include media(xl) {
     .column-right {
       width: 315px;
-      border-left: 1px solid #E8E9EB;
+      border-left: 1px solid #e8e9eb;
       height: 100%;
 
+      .chat-current-person-over {
+        display: none !important;
+      }
+
       .chat-current-person {
-        height: 100%;
-        overflow: hidden;
         position: relative;
-        padding: 30px 30px 80px;
-        .chat-current-person-scroller {
-          height: 100%;
-          overflow: hidden;
-        }
-        figure {
-          margin: 0 0 20px;
-          img {
-            border-radius: 5px;
-          }
-        }
-        h3 {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 25px;
-          color: #111111;
-          margin: 0 0 10px;
-        }
-        p {
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 20px;
-          color: #6E6D7A;
-          margin: 0 0 10px;
-        }
-        .block-person {
-          position: absolute;
-          left: 27px;
-          right: 27px;
-          bottom: 20px;
-          z-index: 9;
-          background: url(../img/block1.svg) 15px 50% no-repeat;
-          padding: 10px 10px 10px 42px;
-          color: #6E6D7A;
-          font-size: 14px;
-          line-height: 20px;
-        }
+        top: 0;
+        height: 100%;
+        transform: none;
+        opacity: 1;
       }
     }
     .column-center {
@@ -164,10 +258,97 @@
     }
 
     .chat-current {
-      padding: 15px 15px 65px;
+      padding: 0 15px 15px;
       .messages-header {
         display: none;
       }
     }
+  }
+}
+
+.upload-wrapper {
+  height: 100%;
+  padding: 20px;
+
+  .upload-box {
+    height: calc(50% - 5px);
+    @include flex;
+    @include flex-column;
+    @include flex-justify(center);
+    @include flex-align-items(center);
+    @include border-radius(8px);
+    border: 2px solid $border;
+    margin: 0 0 10px;
+    position: relative;
+
+    &:hover {
+      border-color: $orange;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    > div {
+      @include flex;
+      @include flex-column;
+      @include flex-justify(center);
+      @include flex-align-items(center);
+
+      &.upload-type1 {
+        background: url(../img/bgi/files1.png) 50% 0 no-repeat;
+        padding: 95px 0 0;
+      }
+
+      &.upload-type2 {
+        background: url(../img/bgi/files2.png) 50% 0 no-repeat;
+        padding: 80px 0 0;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        color: $text;
+
+        strong {
+          font-weight: 500;
+          color: #17191c;
+        }
+      }
+    }
+
+    input[type="file"] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+}
+
+.column-left {
+  .search-result {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right: 0;
+    height: calc(100% - 50px);
+    background: #fff;
+    z-index: 2;
+    display: none;
+  }
+}
+
+.column-center {
+  @include flex;
+  @include flex-column;
+  @include flex-justify(between);
+  .chat-current {
+    height: 100%;
+  }
+  .message-field-wrapper {
+    @include flex-grow(1);
   }
 }

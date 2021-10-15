@@ -1,6 +1,6 @@
 .messages-header {
-  background: #FFFFFF;
-  border-bottom: 1px solid #E8E9EB;
+  background: #ffffff;
+  border-bottom: 1px solid $border;
   height: 50px;
   position: relative;
   padding: 0 10px;
@@ -37,14 +37,14 @@
 }
 
 .person-options-list {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 5px 15px rgba(69, 75, 84, 0.15);
   @include border-radius(8px);
   width: 274px;
   .person-options-box {
     padding: 0 15px;
     & + .person-options-box {
-      border-top: 1px solid #E8E9EB;
+      border-top: 1px solid $border;
       padding-top: 5px;
       padding-bottom: 5px;
     }
@@ -60,7 +60,7 @@
           margin: 0 10px 0 0;
         }
         a {
-          color: #111111;
+          color: $textDark;
           @include flex;
           @include flex-align-items(center);
           &:hover {

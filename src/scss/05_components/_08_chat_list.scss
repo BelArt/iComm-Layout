@@ -2,14 +2,14 @@
   .message {
     padding: 10px;
     position: relative;
-    font-size: 13px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 20px;
     background: $white;
     @include flex;
     @include border-radius(8px);
 
     &__unread {
-      background: #F5F7FA;
+      background: $bgLight;
     }
 
     .person-image {
@@ -23,48 +23,44 @@
       max-width: calc(100% - 50px);
       .message-name {
         font-weight: 600;
-        color: #111111;
+        color: $textDark;
         margin: 0 0 5px;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 20px;
 
         span {
-          font-size: 13px;
-          font-weight: 400;
-          color: #8F97A3;
+          font-size: 12px;
+          font-weight: 500;
+          color: $text;
           margin: 0 0 0 10px;
         }
       }
       .message-content {
         p {
-          font-weight: 400;
-          color: #111111;
-          font-size: 15px;
-          line-height: 25px;
+          color: $textDark;
         }
         .message-attachments {
           padding: 15px 0 0;
         }
         .attachment-contacts {
           @include border-radius(5px);
-          background: #EFF7F6;
+          background: $bgLight;
           padding: 10px;
 
           strong {
             display: block;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 20px;
-            color: #111111;
+            color: $textDark;
           }
           p {
             margin: 5px 0 0;
-            color: #111111;
-            font-size: 15px;
-            line-height: 25px;
+            color: $textDark;
+            font-size: 14px;
+            line-height: 20px;
             a {
-              color: #046552;
-              font-weight: 500;
+              color: $orange;
               text-decoration: none;
             }
           }

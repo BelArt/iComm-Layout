@@ -1,9 +1,15 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  background: #F5F4F2;
+  background: $bgLight;
+}
+
+body > div {
+  height: 100%;
+  width: 100%;
 }
 
 #main {
@@ -16,7 +22,15 @@ body {
   background: #fff;
 }
 
-.page-wrapper, .page-container, .column-left, .page-content, .column-center, .column-right {
+.page-wrapper,
+.page-container,
+.column-left,
+.page-content,
+.column-center,
+.column-right {
+  @include media(md) {
+    height: 100%;
+  }
   height: 100%;
 
   .mCSB_container {
@@ -39,10 +53,30 @@ body {
   }
 
   .page-container {
-    background: #FFFFFF;
-    border: 1px solid #E9EAEC;
+    background: #ffffff;
+    border: 1px solid #e9eaec;
     box-shadow: 0px 10px 30px rgba(61, 66, 77, 0.05);
     border-radius: 5px;
     overflow: hidden;
+  }
+}
+
+.fancybox-container {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.fancybox-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+
+  .fancybox-infobar {
+    position: static;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
   }
 }

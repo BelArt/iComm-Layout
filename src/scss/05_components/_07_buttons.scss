@@ -1,15 +1,16 @@
 .date-btn {
   display: inline-block;
   background: #fff;
-  font-size: 13px;
-  line-height: 16px;
-  padding: 4px 10px;
-  color: #8F97A3;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 2px 10px;
+  font-weight: 500;
+  color: $text;
   @include border-radius(13px);
 
   &:hover {
     text-decoration: none;
-    color: #8F97A3;
+    color: $text;
     box-shadow: 0px 2px 5px rgba(69, 75, 84, 0.1);
   }
 }
@@ -17,17 +18,17 @@
 .end-list-btn {
   display: inline-block;
   background: #fff;
-  font-size: 15px;
-  line-height: 17px;
-  padding: 8px 15px 8px 40px;
-  color: #8F97A3;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 15px 4px 40px;
+  color: $text;
   font-weight: 500;
   @include border-radius(18px);
-  border: 1px solid #E9EAEC;
+  border: 1px solid #e9eaec;
   position: relative;
 
   &:before {
-    content:'';
+    content: "";
     position: absolute;
     left: 15px;
     width: 20px;
@@ -39,7 +40,7 @@
 
   &:hover {
     box-shadow: 0px 5px 10px rgba(69, 75, 84, 0.15);
-    color: #046552;
+    color: $orange;
     text-decoration: none;
     &:before {
       background-position: 50% -51px;
@@ -48,6 +49,9 @@
 
   &:focus {
     box-shadow: 0px 5px 10px rgba(69, 75, 84, 0.15);
-    color: #046552;
+    color: $orange;
+    &:before {
+      background-position: 50% -51px;
+    }
   }
 }

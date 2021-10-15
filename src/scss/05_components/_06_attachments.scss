@@ -35,7 +35,7 @@
       height: 36px;
       background: url(../img/bgi/load-img.png) 0 0 no-repeat;
       display: none;
-      transform: translate3d(-50%,-50%,0);
+      transform: translate3d(-50%, -50%, 0);
     }
 
     &:hover {
@@ -57,7 +57,6 @@
   }
 }
 
-
 .attachments-files {
   @include flex;
   @include flex-column;
@@ -65,6 +64,8 @@
   .attachments-files-item {
     @include inline-flex;
     @include flex-align-items(center);
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     background: #fff;
     padding: 5px;
     @include border-radius(10px);
@@ -73,7 +74,7 @@
     max-width: 100%;
 
     .icon {
-      background: #F1F4F9;
+      background: $bgLight;
       width: 35px;
       height: 35px;
       @include flex;
@@ -85,16 +86,19 @@
 
     .attachments-files-item-text {
       padding: 0 23px 0 0;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 16px;
       max-width: calc(100% - 40px);
       p {
-        font-weight: 500;
-        color: #111111;
+        font-weight: 600;
+        color: $textDark;
+        line-height: 20px;
       }
       span {
         display: block;
-        color: #8F97A3;
+        color: $text;
+        font-size: 12px;
+        line-height: 18px;
       }
     }
 
@@ -105,11 +109,12 @@
       width: 15px;
       height: 15px;
       background: url(../img/bgi/x.svg) 50% no-repeat;
+      background-size: 85%;
     }
 
     .loading-bar {
       height: 5px;
-      background: #E9EAEC;
+      background: $bgLight;
       @include border-radius(5px);
       margin: 8px 0 0;
       position: relative;
@@ -119,7 +124,7 @@
         left: 0;
         top: 0;
         @include border-radius(5px);
-        background: #45917D;
+        background: $orange;
       }
     }
 
@@ -131,6 +136,8 @@
   .attachments-incoming-item {
     @include inline-flex;
     @include flex-align-items(center);
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     background: #fff;
     padding: 5px;
     @include border-radius(10px);
@@ -139,7 +146,7 @@
     max-width: 100%;
 
     .icon {
-      background: #F1F4F9;
+      background: $bgLight;
       width: 35px;
       height: 35px;
       @include flex;
@@ -151,22 +158,26 @@
 
     .attachments-incoming-item-text {
       padding: 0 23px 0 0;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 16px;
       max-width: calc(100% - 40px);
       p {
-        font-weight: 500;
-        color: #111111;
+        font-weight: 600;
+        color: $textDark;
         width: 100%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        line-height: 20px;
       }
       span {
         display: block;
-        color: #8F97A3;
+        color: $text;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
         a {
-          color: #45917D;
+          color: $orange;
           font-weight: 500;
         }
       }
